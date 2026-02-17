@@ -1,59 +1,91 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Planets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Planets</title>
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+    <header>
+        <nav>
+            <h1 class="logo">🌌 Solar System</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
 
-<header>
-    <nav>
-        <h1 class="logo">🌌 Solar System</h1>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="planets.html">Planets</a></li>
-            <li><a href="earth.html">Earth</a></li>
-            <li><a href="mars.html">Mars</a></li>
-            <li><a href="jupiter.html">Jupiter</a></li>
-            <li><a href="saturn.html">Saturn</a></li>
-        </ul>
-    </nav>
-</header>
+    <section class="page fade-in">
+        <h2>Planets of the Solar System</h2>
+        <p>There are 8 planets orbiting the Sun. Click on each to learn more!</p>
 
-<section class="page">
-    <h2>Planets of the Solar System</h2>
-
-    <div class="card-container">
-        <div class="card">
-            <img src="https://solarsystem.nasa.gov/system/feature_items/images/17_earth.png">
-            <h3>Earth</h3>
-            <p>Our home planet.</p>
-            <a href="earth.html" class="btn-small">Learn More</a>
+        <div class="card-container">
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/15_mercury_new.png" alt="Mercury">
+                <h3>Mercury</h3>
+                <p>The smallest planet.</p>
+                <a href="mercury.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/18_venus.png" alt="Venus">
+                <h3>Venus</h3>
+                <p>The hottest planet.</p>
+                <a href="venus.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/17_earth.png" alt="Earth">
+                <h3>Earth</h3>
+                <p>Our home planet.</p>
+                <a href="earth.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png" alt="Mars">
+                <h3>Mars</h3>
+                <p>The Red Planet.</p>
+                <a href="mars.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png" alt="Jupiter">
+                <h3>Jupiter</h3>
+                <p>The largest planet.</p>
+                <a href="jupiter.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/28_saturn.png" alt="Saturn">
+                <h3>Saturn</h3>
+                <p>The ringed planet.</p>
+                <a href="saturn.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/29_uranus.png" alt="Uranus">
+                <h3>Uranus</h3>
+                <p>The sideways planet.</p>
+                <a href="uranus.html" class="btn">Learn More</a>
+            </div>
+            <div class="card">
+                <img src="https://solarsystem.nasa.gov/system/feature_items/images/30_neptune.png" alt="Neptune">
+                <h3>Neptune</h3>
+                <p>The windy planet.</p>
+                <a href="neptune.html" class="btn">Learn More</a>
+            </div>
         </div>
+    </section>
 
-        <div class="card">
-            <img src="https://solarsystem.nasa.gov/system/feature_items/images/19_mars.png">
-            <h3>Mars</h3>
-            <p>The Red Planet.</p>
-            <a href="mars.html" class="btn-small">Learn More</a>
-        </div>
+    <footer>
+        <p>© 2026 Solar System Project for Class 7</p>
+    </footer>
 
-        <div class="card">
-            <img src="https://solarsystem.nasa.gov/system/feature_items/images/16_jupiter_new.png">
-            <h3>Jupiter</h3>
-            <p>The Gas Giant.</p>
-            <a href="jupiter.html" class="btn-small">Learn More</a>
-        </div>
-
-        <div class="card">
-            <img src="https://solarsystem.nasa.gov/system/feature_items/images/28_saturn.png">
-            <h3>Saturn</h3>
-            <p>The Ringed Planet.</p>
-            <a href="saturn.html" class="btn-small">Learn More</a>
-        </div>
-    </div>
-</section>
-
-<script src="js/script.js"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>

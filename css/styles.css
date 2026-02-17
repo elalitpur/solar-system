@@ -10,30 +10,36 @@ body {
     color: white;
 }
 
-nav {
+header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 50px;
+    padding: 15px 20px;
     background: #111827;
+    flex-wrap: wrap;
 }
 
-nav ul {
+header nav .logo {
+    font-size: 1.5rem;
+}
+
+header nav ul {
     list-style: none;
     display: flex;
+    flex-wrap: wrap;
 }
 
-nav ul li {
-    margin-left: 20px;
+header nav ul li {
+    margin: 5px 10px;
 }
 
-nav ul li a {
+header nav ul li a {
     color: white;
     text-decoration: none;
 }
 
 .hero {
-    height: 90vh;
+    height: 50vh;
     background: url('https://images-assets.nasa.gov/image/PIA12235/PIA12235~orig.jpg') no-repeat center center/cover;
     display: flex;
     justify-content: center;
@@ -42,13 +48,13 @@ nav ul li a {
 }
 
 .hero-text h2 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .btn {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 25px;
+    margin-top: 10px;
+    padding: 8px 20px;
     background: #2563eb;
     color: white;
     text-decoration: none;
@@ -59,48 +65,59 @@ nav ul li a {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 40px;
+    padding: 20px;
 }
 
 .card {
     background: #1f2937;
-    margin: 15px;
-    padding: 20px;
+    margin: 10px;
+    padding: 15px;
     border-radius: 10px;
-    width: 250px;
+    width: 200px;
     text-align: center;
     transition: 0.3s;
 }
 
 .card img {
-    width: 150px;
+    width: 100px;
+    height: auto;
 }
 
 .card:hover {
     transform: scale(1.05);
 }
 
-.planet-page {
+.planet-page, .page {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
     text-align: center;
-    padding: 40px;
 }
 
-.planet-page img {
-    width: 250px;
+.planet-page img, .page img {
+    max-width: 100%;
+    height: auto;
+    margin: 20px 0;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
-    width: 300px;
-    margin: auto;
+.quiz-question {
+    margin-bottom: 15px;
+    text-align: left;
 }
 
-input, textarea {
-    margin: 10px 0;
-    padding: 10px;
-    border-radius: 5px;
+#quiz-form button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
     border: none;
+    cursor: pointer;
+}
+
+#result {
+    text-align: center;
+    font-weight: bold;
 }
 
 footer {
@@ -118,4 +135,27 @@ footer {
 .fade-in.show {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header nav {
+        flex-direction: column;
+    }
+    header nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero {
+        height: 40vh;
+    }
+    .hero-text h2 {
+        font-size: 1.5rem;
+    }
+    .card {
+        width: 90%;
+    }
+    .planet-page, .page {
+        padding: 10px;
+    }
 }

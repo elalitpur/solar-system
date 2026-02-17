@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System - Quiz</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1 class="logo">🌌 Solar System</h1>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="planets.html">Planets</a></li>
+                <li><a href="mercury.html">Mercury</a></li>
+                <li><a href="venus.html">Venus</a></li>
+                <li><a href="earth.html">Earth</a></li>
+                <li><a href="mars.html">Mars</a></li>
+                <li><a href="jupiter.html">Jupiter</a></li>
+                <li><a href="saturn.html">Saturn</a></li>
+                <li><a href="uranus.html">Uranus</a></li>
+                <li><a href="neptune.html">Neptune</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page fade-in">
+        <h2>Test Your Knowledge!</h2>
+        <form id="quiz-form">
+            <div class="quiz-question">
+                <p>1. Which is the smallest planet?</p>
+                <label><input type="radio" name="q1" value="a"> Mercury</label><br>
+                <label><input type="radio" name="q1" value="b"> Mars</label><br>
+                <label><input type="radio" name="q1" value="c"> Jupiter</label>
+            </div>
+            <div class="quiz-question">
+                <p>2. Which planet is the hottest?</p>
+                <label><input type="radio" name="q2" value="a"> Mercury</label><br>
+                <label><input type="radio" name="q2" value="b"> Venus</label><br>
+                <label><input type="radio" name="q2" value="c"> Earth</label>
+            </div>
+            <div class="quiz-question">
+                <p>3. How many moons does Earth have?</p>
+                <label><input type="radio" name="q3" value="a"> 0</label><br>
+                <label><input type="radio" name="q3" value="b"> 2</label><br>
+                <label><input type="radio" name="q3" value="c"> 1</label>
+            </div>
+            <div class="quiz-question">
+                <p>4. Mars is known as the...?</p>
+                <label><input type="radio" name="q4" value="a"> Red Planet</label><br>
+                <label><input type="radio" name="q4" value="b"> Blue Planet</label><br>
+                <label><input type="radio" name="q4" value="c"> Ringed Planet</label>
+            </div>
+            <div class="quiz-question">
+                <p>5. Which is the largest planet?</p>
+                <label><input type="radio" name="q5" value="a"> Saturn</label><br>
+                <label><input type="radio" name="q5" value="b"> Jupiter</label><br>
+                <label><input type="radio" name="q5" value="c"> Neptune</label>
+            </div>
+            <div class="quiz-question">
+                <p>6. Saturn is famous for its...?</p>
+                <label><input type="radio" name="q6" value="a"> Storms</label><br>
+                <label><input type="radio" name="q6" value="b"> Moons</label><br>
+                <label><input type="radio" name="q6" value="c"> Rings</label>
+            </div>
+            <div class="quiz-question">
+                <p>7. Uranus spins...?</p>
+                <label><input type="radio" name="q7" value="a"> Sideways</label><br>
+                <label><input type="radio" name="q7" value="b"> Backwards</label><br>
+                <label><input type="radio" name="q7" value="c"> Normally</label>
+            </div>
+            <div class="quiz-question">
+                <p>8. What color is Neptune?</p>
+                <label><input type="radio" name="q8" value="a"> Red</label><br>
+                <label><input type="radio" name="q8" value="b"> Blue</label><br>
+                <label><input type="radio" name="q8" value="c"> Yellow</label>
+            </div>
+            <div class="quiz-question">
+                <p>9. How many planets in the solar system?</p>
+                <label><input type="radio" name="q9" value="a"> 7</label><br>
+                <label><input type="radio" name="q9" value="b"> 9</label><br>
+                <label><input type="radio" name="q9" value="c"> 8</label>
+            </div>
+            <div class="quiz-question">
+                <p>10. Which are gas giants?</p>
+                <label><input type="radio" name="q10" value="a"> Jupiter & Saturn</label><br>
+                <label><input type="radio" name="q10" value="b"> Earth & Mars</label><br>
+                <label><input type="radio" name="q10" value="c"> Mercury & Venus</label>
+            </div>
+            <button type="button" onclick="checkQuiz()">Submit Quiz</button>
+        </form>
+        <div id="result"></div>
+    </section>
+
+    <footer>
+        <p>© 2026 Solar System Project for Class 7</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
